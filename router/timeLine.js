@@ -1,13 +1,14 @@
 "use strict";
-class InstagramRouter {
+
+class TimeLineRouter {
   constructor() {
   }
 
   setupRoutes(server, controller) {
-    server.addRoute('get', '/timeline/:username', controller.listAll);
-    server.addRoute('get', '/timeline/:username/fotos', controller.listPhotos);
-    server.addRoute('get', '/timeline/:username/videos', controller.listVideos);
+    server.addRoute('get', '/timeline/:username', controller.listAll.bind(controller));
+    server.addRoute('get', '/timeline/:username/fotos', controller.listPhotos.bind(controller));
+    server.addRoute('get', '/timeline/:username/videos', controller.listVideos.bind(controller));
   }
 }
 
-module.exports = InstagramRouter;
+module.exports = TimeLineRouter;

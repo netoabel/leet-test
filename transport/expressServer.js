@@ -23,7 +23,7 @@ class ExpressServer {
   }
 
   _setupMiddlewares() {
-    this._server.use(bodyParser.urlencoded());
+    this._server.use(bodyParser.urlencoded({extended: true}));
     this._server.use(bodyParser.json());
   }
 }
