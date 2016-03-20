@@ -38,7 +38,7 @@ class InstagramNodeStub {
 
       user_search: function (username, callback) {
         var result = [];
-        if (username === "leet-tech") {
+        if (username === "leettech") {
           result.push({"id": "1"});
         }
         callback(null, result);

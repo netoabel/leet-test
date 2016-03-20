@@ -15,9 +15,9 @@ describe('InstagramAPI', function () {
 
   describe('#getUserId()', function () {
 
-    describe('Given "leet-tech"', function () {
+    describe('Given "leettech"', function () {
       it('returns a string', function (done) {
-        instagramAPI.getUserId('leet-tech').then(function (result) {
+        instagramAPI.getUserId('leettech').then(function (result) {
           expect(result).to.be.a('string');
           done();
         });
@@ -121,9 +121,9 @@ describe('InstagramAPI', function () {
 
   describe('#getPostsByUsername()', function () {
 
-    describe('Given "leet-tech"', function () {
+    describe('Given "leettech"', function () {
       it('returns an array', function (done) {
-        instagramAPI.getPostsByUsername('leet-tech').then(function (result) {
+        instagramAPI.getPostsByUsername('leettech').then(function (result) {
           expect(result).to.be.an('array');
           done();
         });
@@ -140,10 +140,10 @@ describe('InstagramAPI', function () {
       });
     });
 
-    describe('Given "leet-tech with 3 pages', function () {
+    describe('Given "leettech with 3 pages', function () {
       it('returns an array', function (done) {
         instagramModule.instagram().set_number_of_pages(3);
-        instagramAPI.getPostsByUsername("leet-tech").then(function (result) {
+        instagramAPI.getPostsByUsername("leettech").then(function (result) {
           expect(result).to.be.an('array');
           done();
         });
@@ -151,7 +151,7 @@ describe('InstagramAPI', function () {
 
       it('returns more than 40 entries', function (done) {
         instagramModule.instagram().set_number_of_pages(3);
-        instagramAPI.getPostsByUsername("leet-tech").then(function (result) {
+        instagramAPI.getPostsByUsername("leettech").then(function (result) {
           expect(result).to.have.length.above(40);
           done();
         });
@@ -159,7 +159,7 @@ describe('InstagramAPI', function () {
 
       it('returns at most 60 entries', function (done) {
         instagramModule.instagram().set_number_of_pages(3);
-        instagramAPI.getPostsByUsername("leet-tech").then(function (result) {
+        instagramAPI.getPostsByUsername("leettech").then(function (result) {
           expect(result).to.have.length.at.most(60);
           done();
         });
