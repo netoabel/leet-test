@@ -18,18 +18,18 @@ describe('TimeLine', function () {
     }
   });
 
-  describe('#listAllUserMedia()', function () {
+  describe('#getAllUserPosts()', function () {
 
     describe('Given "leet-tech"', function () {
       it('returns an array', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           expect(result).to.be.an('array');
           done();
         });
       });
 
       it('has string image_url in all returned items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             expect(item).to.have.property('image_url');
             expect(item.image_url).to.be.a('string');
@@ -39,7 +39,7 @@ describe('TimeLine', function () {
       });
 
       it('has image_url equal to images.standard_resolution.url in all returned items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             expect(item.image_url).to.be.equal(item.images.standard_resolution.url);
           });
@@ -48,7 +48,7 @@ describe('TimeLine', function () {
       });
 
       it('has string thumb_url in all returned items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             expect(item).to.have.property('thumb_url');
             expect(item.thumb_url).to.be.a('string');
@@ -58,7 +58,7 @@ describe('TimeLine', function () {
       });
 
       it('has thumb_url equal to images.low_resolution.url in all returned items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             expect(item.thumb_url).to.be.equal(item.images.low_resolution.url);
           });
@@ -67,7 +67,7 @@ describe('TimeLine', function () {
       });
 
       it('has integer file_size in all returned items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             expect(item).to.have.property('file_size');
             expect(item.file_size).to.be.a('number');
@@ -77,7 +77,7 @@ describe('TimeLine', function () {
       });
 
       it('has string video_url in all returned video items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             if (item.type === 'video') {
               expect(item).to.have.property('video_url');
@@ -89,7 +89,7 @@ describe('TimeLine', function () {
       });
 
       it('has video_url equal to videos.standard_resolution.url in all returned video items', function (done) {
-        timeLine.listAllUserMedia('leet-tech').then(function (result) {
+        timeLine.getAllUserPosts('leet-tech').then(function (result) {
           result.forEach(function (item) {
             if (item.type === 'video') {
               expect(item.video_url).to.be.equal(item.videos.standard_resolution.url);
@@ -103,7 +103,7 @@ describe('TimeLine', function () {
 
     describe('Given "asdasd" (invalid username)', function () {
       it('returns an empty array', function (done) {
-        timeLine.listAllUserMedia('asdasd').then(function (result) {
+        timeLine.getAllUserPosts('asdasd').then(function (result) {
           expect(result).to.be.an('array');
           expect(result).to.be.empty;
           done();
@@ -113,18 +113,18 @@ describe('TimeLine', function () {
 
   });
 
-  describe('#listUserMediaByType()', function () {
+  describe('#getUserPostsByType()', function () {
 
     describe('Given ["leet-tech", "image"]', function () {
       it('returns an array', function (done) {
-        timeLine.listUserMediaByType('leet-tech', 'image').then(function (result) {
+        timeLine.getUserPostsByType('leet-tech', 'image').then(function (result) {
           expect(result).to.be.an('array');
           done();
         });
       });
 
       it('has only image posts in the returned array', function (done) {
-        timeLine.listUserMediaByType('leet-tech', 'image').then(function (result) {
+        timeLine.getUserPostsByType('leet-tech', 'image').then(function (result) {
           result.forEach(function (item) {
             expect(item.type).to.be.equal('image');
           });
@@ -135,14 +135,14 @@ describe('TimeLine', function () {
 
     describe('Given ["leet-tech", "video"]', function () {
       it('returns an array', function (done) {
-        timeLine.listUserMediaByType('leet-tech', 'video').then(function (result) {
+        timeLine.getUserPostsByType('leet-tech', 'video').then(function (result) {
           expect(result).to.be.an('array');
           done();
         });
       });
 
       it('has only video posts in the returned array', function (done) {
-        timeLine.listUserMediaByType('leet-tech', 'video').then(function (result) {
+        timeLine.getUserPostsByType('leet-tech', 'video').then(function (result) {
           result.forEach(function (item) {
             expect(item.type).to.be.equal('video');
           });
@@ -153,7 +153,7 @@ describe('TimeLine', function () {
 
     describe('Given ["leet-tech", "asdasd"]', function () {
       it('returns an empty array', function (done) {
-        timeLine.listUserMediaByType('leet-tech', 'asdasd').then(function (result) {
+        timeLine.getUserPostsByType('leet-tech', 'asdasd').then(function (result) {
           expect(result).to.be.an('array');
           expect(result).to.be.empty;
           done();
