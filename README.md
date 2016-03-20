@@ -21,6 +21,6 @@ $ mocha ./test --recursive
 ```
 
 
-> P.S.: Due to an Instagram limitation, applications in Sandbox Mode can retrieve at most 20 posts a time (and it doesn't return any pagination data). Thus this project won't run properly in this mode. To get the full timeline of an user, you will need an access token generated from a valid Instagram client that isn't in Sandbox Mode. For the sake of this test, I created a stub to simulate the Instagram API behavior and wrote tests to validate the application behavior.
+> P.S.: Due to an Instagram limitation, applications in Sandbox Mode can retrieve at most 20 posts a time (with no pagination data). Thus this project won't run properly in this mode. To get the full timeline of an user, you will need an access token generated from a valid Instagram client that isn't in Sandbox Mode. For the sake of this test, I created a stub to simulate the Instagram API behavior and wrote tests to validate the application behavior.
 
 Good luck for me! :D
