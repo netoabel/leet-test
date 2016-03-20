@@ -7,7 +7,7 @@ The following versions were used:
 
 ## The API
 There are three endpoints:
-```http
+```
   - GET /timeline/{profilename}             // Returns all the publications made by {profilename}
   - GET /timeline/{profilename}/fotos       // Returns all the images publications made by {profilename}
   - GET /timeline/{profilename}/videos      // Returns all the videos publications made by {profilename}
