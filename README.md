@@ -2,6 +2,7 @@
 This is a test project developed for Leet's selective process. The application consists in a RESTful API that reads publications data from the timeline of an Instagram user and return it in JSON format after some data processing.
 
 The following versions were used:
+
   - Node.js v5.3.0;
   - Mocha v2.4.5.
 
