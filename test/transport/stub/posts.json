@@ -1,0 +1,272 @@
+[
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "video",
+    "videos": {
+      "standard_resolution": {
+        "url": "video_standard_resolution"
+      }
+    },
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  },
+  {
+    "type": "image",
+    "images": {
+      "low_resolution": {
+        "url": "image_low_resolution"
+      },
+      "standard_resolution": {
+        "url": "image_standard_resolution"
+      }
+    }
+  }
+]
