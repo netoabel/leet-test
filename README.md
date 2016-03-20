@@ -5,13 +5,6 @@ The following versions were used:
   - Node.js v5.3.0;
   - Mocha v2.4.5.
 
-## The API
-There are three endpoints:
-```
-  - GET /timeline/{profilename}             // Returns all the publications made by {profilename}
-  - GET /timeline/{profilename}/fotos       // Returns all the images publications made by {profilename}
-  - GET /timeline/{profilename}/videos      // Returns all the videos publications made by {profilename}
-```
 ## How to run it
 You must set a value for `INSTAGRAM_ACCESS_TOKEN` environment variable before running the application. It can be done as follows:
 ```sh
