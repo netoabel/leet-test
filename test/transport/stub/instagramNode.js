@@ -19,7 +19,7 @@ class InstagramNodeStub {
 
       user_media_recent: function (userId, callback) { //Todo: Review this
         if (userId === "1") {
-          fs.readFile(path.join(__dirname, 'posts.json'), 'utf8', function (err, data) {
+          fs.readFile(path.join(__dirname, '../../posts.json'), 'utf8', function (err, data) {
             if (err) throw err;
             var result = JSON.parse(data);
             var pagination = {};

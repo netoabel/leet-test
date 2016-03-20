@@ -18,7 +18,7 @@ describe('InstagramAPI', function () {
     describe('Given "leet-tech"', function () {
       it('returns a string', function (done) {
         instagramAPI.getUserId('leet-tech').then(function (result) {
-          expect(result).to.be.string;
+          expect(result).to.be.a('string');
           done();
         });
       });
@@ -41,7 +41,7 @@ describe('InstagramAPI', function () {
       it('returns an array', function (done) {
         instagramModule.instagram().set_number_of_pages(1);
         instagramAPI.getPostsByUserId(1).then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           done();
         });
       });
@@ -59,7 +59,7 @@ describe('InstagramAPI', function () {
       it('returns an array', function (done) {
         instagramModule.instagram().set_number_of_pages(2);
         instagramAPI.getPostsByUserId("1").then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           done();
         });
       });
@@ -85,7 +85,7 @@ describe('InstagramAPI', function () {
       it('returns an array', function (done) {
         instagramModule.instagram().set_number_of_pages(3);
         instagramAPI.getPostsByUserId("1").then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           done();
         });
       });
@@ -110,7 +110,7 @@ describe('InstagramAPI', function () {
     describe('Given "asdasd (invalid user id)"', function () {
       it('returns an empty array', function (done) {
         instagramAPI.getPostsByUserId('asdasd').then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           expect(result).to.be.empty;
           done();
         });
@@ -122,10 +122,9 @@ describe('InstagramAPI', function () {
   describe('#getPostsByUsername()', function () {
 
     describe('Given "leet-tech"', function () {
-      it('returns an array with at least one item', function (done) {
+      it('returns an array', function (done) {
         instagramAPI.getPostsByUsername('leet-tech').then(function (result) {
-          expect(result).to.be.an.array;
-          expect(result).to.have.length.at.least(1);
+          expect(result).to.be.an('array');
           done();
         });
       });
@@ -134,7 +133,7 @@ describe('InstagramAPI', function () {
     describe('Given "asdasd" (invalid username)', function () {
       it('returns an empty array', function (done) {
         instagramAPI.getPostsByUsername('asdasd').then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           expect(result).to.be.empty;
           done();
         });
@@ -145,7 +144,7 @@ describe('InstagramAPI', function () {
       it('returns an array', function (done) {
         instagramModule.instagram().set_number_of_pages(3);
         instagramAPI.getPostsByUsername("leet-tech").then(function (result) {
-          expect(result).to.be.an.array;
+          expect(result).to.be.an('array');
           done();
         });
       });
