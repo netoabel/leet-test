@@ -17,13 +17,13 @@ class InstagramNodeStub {
         self._pages = pages;
       },
 
-      user_media_recent: function (userId, callback) { //Todo: Review this
+      user_media_recent: function (userId, callback) {
         if (userId === "1") {
-          fs.readFile(path.join(__dirname, '../../posts.json'), 'utf8', function (err, data) {
+          fs.readFile(path.join(__dirname, '../../fakePosts.json'), 'utf8', function (err, data) {
             if (err) throw err;
             var result = JSON.parse(data);
             var pagination = {};
-            if (self._currentPage < self._pages) {
+            if (self.instagram()._has_next_page()) {
               pagination.next = function (cb) {
                 self._currentPage++;
                 self.instagram().user_media_recent(userId, cb);
@@ -42,6 +42,10 @@ class InstagramNodeStub {
           result.push({"id": "1"});
         }
         callback(null, result);
+      },
+      
+      _has_next_page: function () {
+        return self._currentPage < self._pages;
       }
     };
   }

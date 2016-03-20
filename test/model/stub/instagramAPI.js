@@ -10,7 +10,7 @@ class InstagramAPIStub {
   getPostsByUsername(username) {
     return new Promise(function (resolve) {
       if(username === 'leettech'){
-        fs.readFile(path.join(__dirname, '../../posts.json'), 'utf8', function (err, data) {
+        fs.readFile(path.join(__dirname, '../../fakePosts.json'), 'utf8', function (err, data) {
           if (err) throw err;
           resolve(JSON.parse(data));
         });
