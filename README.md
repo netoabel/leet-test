@@ -1,5 +1,5 @@
 # Leet test
-This is a test project developed for Leet's selective process. The application consists in a RESTful API that reads publications data from the timeline of an Instagram user and return it in JSON format after some data processing.
+This is a test project developed for Leet's selective process. The application consists in a RESTful API that reads publications data from the timeline of an Instagram user and returns it in JSON format after some data processing.
 
 The following versions were used:
 
